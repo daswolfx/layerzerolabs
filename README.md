@@ -28,6 +28,12 @@ workbench concept and a concise starting-point-to-physical-result sequence.
 It uses another crop of the same concept artwork, explicitly labeled as such;
 replace it with approved real workshop photography when available.
 
+The project-request section now has an inset form panel, a compact intake
+brief, subtle page texture, and a lightweight wire-cube depth field inspired
+by the earlier site's parallax. The cubes respond to fine-pointer movement
+only; touch and reduced-motion users get the static composition. This is a
+visual preview, not evidence of Formspree delivery.
+
 ## Release gates
 
 - Review desktop and phone layouts with the owner.
