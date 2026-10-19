@@ -679,77 +679,6 @@
   color: var(--accent-blue);
 }
 
-/* ── ABOUT SECTION ──────────────────────────────────────────── */
-
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  align-items: center;
-}
-
-.about-visual {
-  position: relative;
-  height: 500px;
-}
-
-/* Floating data badges */
-.about-badge {
-  position: absolute;
-  padding: 14px 22px;
-  background: var(--bg-card);
-  border: 1px solid rgba(0, 168, 255, 0.3);
-  clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px));
-  z-index: 2;
-}
-
-.badge-value {
-  font-family: var(--font-display);
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: var(--accent-orange);
-}
-
-.badge-label {
-  font-size: 0.62rem;
-  letter-spacing: 0.2em;
-  color: var(--text-secondary);
-  text-transform: uppercase;
-}
-
-.about-text p {
-  font-size: 0.93rem;
-  line-height: 1.85;
-  color: var(--text-secondary);
-  margin-bottom: 18px;
-}
-
-.about-text p strong { color: var(--text-primary); font-weight: 600; }
-
-.capability-list {
-  display: flex;
-  flex-direction: column;
-  gap: 11px;
-  margin-top: 30px;
-}
-
-.capability-item {
-  display: flex;
-  align-items: center;
-  gap: 11px;
-  font-size: 0.84rem;
-  color: var(--text-secondary);
-}
-
-.capability-item::before {
-  content: '▸';
-  color: var(--accent-orange);
-  font-size: 0.68rem;
-  flex-shrink: 0;
-}
-
-.capability-item strong { color: var(--text-primary); font-weight: 600; }
-
 /* ── QUOTE / CONTACT ────────────────────────────────────────── */
 
 .quote-grid {
@@ -971,12 +900,6 @@ a.contact-value:focus-visible {
 
   .process-track::before { display: none; }
 
-  .about-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .about-visual { height: 280px; }
-
   .quote-grid { grid-template-columns: 1fr; }
   .form-row   { grid-template-columns: 1fr; }
 
@@ -990,46 +913,4 @@ a.contact-value:focus-visible {
   .gallery-item:nth-child(6),
   .gallery-item:nth-child(7),
   .gallery-item:nth-child(8) { grid-column: span 6; grid-row: span 1; }
-}
-
-@media (max-width: 600px) {
-  .about-grid {
-    gap: 42px;
-  }
-
-  .about-visual {
-    height: auto;
-    min-height: 0;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px;
-    padding: 30px 0 18px;
-  }
-
-  .about-visual svg {
-    opacity: 0.3 !important;
-  }
-
-  .about-badge {
-    position: relative;
-    top: auto !important;
-    right: auto !important;
-    bottom: auto !important;
-    left: auto !important;
-    min-width: 0;
-    padding: 16px;
-  }
-
-  .about-badge:first-child {
-    grid-column: 1 / -1;
-  }
-
-  .badge-value {
-    font-size: 1.2rem;
-  }
-
-  .badge-label {
-    font-size: 0.56rem;
-    letter-spacing: 0.12em;
-  }
 }

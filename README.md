@@ -23,6 +23,11 @@ actions. The shop currently uses a direct branded-store link, not embedded
 Shopify checkout or account-level integration. The quote form starts text-only
 because attachment support on the Formspree account is unconfirmed.
 
+The About section replaces the abstract cube and floating badges with a
+workbench concept and a concise starting-point-to-physical-result sequence.
+It uses another crop of the same concept artwork, explicitly labeled as such;
+replace it with approved real workshop photography when available.
+
 ## Release gates
 
 - Review desktop and phone layouts with the owner.

@@ -21,8 +21,8 @@
   <link rel="stylesheet" href="css/base.css?v=20260728b" />
   <link rel="stylesheet" href="css/animations.css?v=20260725c" />
   <link rel="stylesheet" href="css/layout.css?v=20260728b" />
-  <link rel="stylesheet" href="css/components.css?v=20260728a" />
-  <link rel="stylesheet" href="css/tactile.css?v=20261019a" />
+  <link rel="stylesheet" href="css/components.css?v=20261019b" />
+  <link rel="stylesheet" href="css/tactile.css?v=20261019b" />
 </head>
 <body>
   <nav id="main-nav" aria-label="Main navigation">
@@ -336,90 +336,21 @@
   <section id="about">
     <div class="section-inner">
       <div class="about-grid">
-        <div class="about-visual reveal" aria-hidden="true">
-          <div class="about-badge" style="top:18%;left:8%">
-            <div class="badge-value"><img src="assets/brand/layer-zero-electric-star-mark.png" alt="" width="54" height="54" /></div>
-            <div class="badge-label">Layer Zero</div>
-          </div>
-          <div class="about-badge" style="top:48%;right:4%">
-            <div class="badge-value">FDM</div>
-            <div class="badge-label">Multi-Material</div>
-          </div>
-          <div class="about-badge" style="bottom:14%;left:18%">
-            <div class="badge-value">GA</div>
-            <div class="badge-label">Georgia Based</div>
-          </div>
-          <svg viewBox="0 0 400 500"
-               style="position:absolute;inset:0;width:100%;height:100%;opacity:.55"
-               xmlns="http://www.w3.org/2000/svg"
-               role="presentation">
-            <defs>
-              <pattern id="grid-large" width="40" height="40" patternUnits="userSpaceOnUse">
-                <path d="M40 0L0 0 0 40" fill="none" stroke="rgba(0,168,255,.18)" stroke-width=".5"/>
-              </pattern>
-              <pattern id="grid-small" width="8" height="8" patternUnits="userSpaceOnUse">
-                <path d="M8 0L0 0 0 8"  fill="none" stroke="rgba(0,168,255,.07)" stroke-width=".5"/>
-              </pattern>
-            </defs>
-            <rect width="400" height="500" fill="url(#grid-small)"/>
-            <rect width="400" height="500" fill="url(#grid-large)"/>
-            <g transform="translate(200,130)">
-              <polygon points="0,-75 85,-33 0,8 -85,-33"    fill="none" stroke="rgba(0,200,255,.65)" stroke-width="1.5"/>
-              <polygon points="85,-33 85,65 0,105 0,8"      fill="none" stroke="rgba(0,200,255,.4)"  stroke-width="1.5"/>
-              <polygon points="-85,-33 -85,65 0,105 0,8"   fill="none" stroke="rgba(0,200,255,.4)"  stroke-width="1.5"/>
-              <line x1="0"   y1="8"   x2="0"   y2="105" stroke="rgba(0,200,255,.2)" stroke-width=".5" stroke-dasharray="4,4"/>
-              <line x1="-42" y1="-12" x2="42"  y2="28"  stroke="rgba(0,200,255,.2)" stroke-width=".5" stroke-dasharray="4,4"/>
-              <circle cx="0"   cy="-75" r="3" fill="rgba(0,200,255,.8)"/>
-              <circle cx="85"  cy="-33" r="3" fill="rgba(255,107,0,.8)"/>
-              <circle cx="-85" cy="-33" r="3" fill="rgba(255,107,0,.8)"/>
-            </g>
-            <line x1="300" y1="98"  x2="330" y2="98"  stroke="rgba(255,107,0,.6)" stroke-width="1"/>
-            <line x1="300" y1="240" x2="330" y2="240" stroke="rgba(255,107,0,.6)" stroke-width="1"/>
-            <line x1="315" y1="98"  x2="315" y2="240" stroke="rgba(255,107,0,.5)" stroke-width=".5"/>
-            <text x="322" y="172" fill="rgba(255,107,0,.75)" font-size="9" font-family="monospace"
-                  transform="rotate(90,322,172)">150mm</text>
-            <text x="10" y="490" fill="rgba(0,168,255,.28)" font-size="7" font-family="monospace">
-              LAYER Ø LABS · GEORGIA · CAD REV 1.0
-            </text>
-          </svg>
-        </div>
+        <figure class="about-visual reveal">
+          <img src="assets/brand/tactile-lab-background.png" alt="Concept artwork of a workbench with a lattice object, material samples, and electric-blue light" loading="lazy" width="1904" height="826" />
+          <figcaption><span>WORKBENCH CONCEPT</span><strong>IDEA → MATERIAL</strong><small>Concept artwork, not a documented Layer Zero Labs project.</small></figcaption>
+        </figure>
         <div class="about-text">
-          <p class="section-label reveal">The Story</p>
-          <h2 class="section-title reveal">
-            <span class="visually-hidden">Built From Layer Zero</span>
-            <span aria-hidden="true">Built From <em>Layer Zero</em></span>
-          </h2>
-          <div style="margin-top:30px">
-            <p class="reveal">
-              <strong>Layer Zero is the foundation beneath every system.</strong>
-              It is the material, hardware, and physical structure that makes
-              everything above it possible.
-            </p>
-            <p class="reveal">
-              <span class="visually-hidden">Layer Zero Labs</span>
-              <span class="brand-inline" aria-hidden="true">Layer Zero Labs</span>
-              applies that philosophy to manufacturing:
-              <strong>thoughtful design, controlled processes, and dependable
-              physical results.</strong>
-            </p>
-            <p class="reveal">
-              Founded in Georgia by a systems builder, LZL helps customers move
-              from an existing model, reference object, sketch, or early idea
-              to a finished FDM part with practical technical guidance throughout.
-            </p>
-            <ul class="capability-list reveal">
-              <li class="capability-item"><strong>Open and enclosed FDM capacity</strong> — matched to part and material requirements</li>
-              <li class="capability-item"><strong>Multi-color production</strong> — color-mapped parts, labels, and display pieces</li>
-              <li class="capability-item"><strong>Engineering and flexible materials</strong> — selected according to the use case</li>
-              <li class="capability-item"><strong>CAD and repair workflows</strong> — modeling, reverse design, and print optimization</li>
-              <li class="capability-item">
-                <strong>Layer Zero Substrate</strong>
-                — our in-house production and slicing workspace
-              </li>
-              <li class="capability-item"><strong>Finishing and assembly</strong> — sand, prime, paint, install hardware, and assemble</li>
-              <li class="capability-item"><strong>Georgia-based</strong> — local pickup + nationwide shipping</li>
-            </ul>
-          </div>
+          <p class="section-label reveal">THE PHYSICAL LAYER</p>
+          <h2 class="section-title reveal">The work starts with <em>what you have.</em></h2>
+          <p class="about-lede reveal">A model. A broken part. A sketch. A strange idea that deserves to exist outside a screen.</p>
+          <p class="reveal">Layer Zero Labs is a Georgia-based workshop for turning those starting points into practical FDM parts and prototypes. We work through the material, fit, build strategy, and finish with the intended use in mind.</p>
+          <ol class="about-sequence reveal" aria-label="From idea to physical result">
+            <li><span>01 / STARTING POINT</span><strong>Bring the model, reference, or idea you already have.</strong></li>
+            <li><span>02 / DECISIONS</span><strong>Work out geometry, material, fit, and finish.</strong></li>
+            <li><span>03 / PHYSICAL RESULT</span><strong>Make the part, then evaluate its fit and finish.</strong></li>
+          </ol>
+          <a class="about-action reveal" href="#project-request" data-track-quote>START A PROJECT <span aria-hidden="true">↗</span></a>
         </div>
       </div><!-- /.about-grid -->
     </div><!-- /.section-inner -->
