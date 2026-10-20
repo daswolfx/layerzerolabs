@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="css/base.css?v=20260728b" />
   <link rel="stylesheet" href="css/animations.css?v=20260725c" />
   <link rel="stylesheet" href="css/layout.css?v=20260728b" />
-  <link rel="stylesheet" href="css/components.css?v=20261019b" />
+  <link rel="stylesheet" href="css/components.css?v=20261019c" />
   <link rel="stylesheet" href="css/tactile.css?v=20261019c" />
 </head>
 <body>
@@ -622,22 +622,30 @@
   <section id="substrate" aria-labelledby="substrate-title">
     <div class="section-inner">
       <div class="substrate-banner reveal">
-        <video
-          class="substrate-banner-video"
-          autoplay
-          muted
-          loop
-          playsinline
-          preload="metadata"
-          poster="assets/substrate/layer-zero-substrate-banner-v3.png"
-          aria-hidden="true"
-        >
-          <source src="assets/substrate/layer-zero-substrate-banner-animated.mp4" type="video/mp4" />
-          <img
-            src="assets/substrate/layer-zero-substrate-banner-v3.png"
-            alt="Layer Zero Labs — Layer Zero Substrate"
-          />
-        </video>
+        <div class="substrate-identity" role="img" aria-label="SUBSTRATE by Layer Zero Labs, with the electric-blue reality-tear Ø and layered field lines">
+          <svg class="substrate-field" viewBox="0 0 1400 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+            <g class="substrate-field-lines" fill="none" stroke="#37ceff" stroke-width="1.3">
+              <path d="M-110 575C130 495 259 548 456 455S787 444 926 352s291-76 574-179" />
+              <path d="M-110 544C130 464 259 517 456 424S787 413 926 321s291-76 574-179" />
+              <path d="M-110 513C130 433 259 486 456 393S787 382 926 290s291-76 574-179" />
+              <path d="M-110 482C130 402 259 455 456 362S787 351 926 259s291-76 574-179" />
+              <path d="M-110 451C130 371 259 424 456 331S787 320 926 228s291-76 574-179" />
+              <path d="M-110 420C130 340 259 393 456 300S787 289 926 197s291-76 574-179" />
+            </g>
+            <path class="substrate-active-layer" d="M-110 575C130 495 259 548 456 455S787 444 926 352s291-76 574-179" fill="none" stroke="#ffb844" stroke-width="2" />
+          </svg>
+          <span class="substrate-scan" aria-hidden="true"></span>
+          <div class="substrate-banner-top" aria-hidden="true"><span>LZL / FIELD SYSTEMS</span><span>01 — SUBSTRATE</span></div>
+          <div class="substrate-banner-lockup">
+            <img class="substrate-banner-mark" src="assets/brand/layer-zero-electric-star-mark.png" width="1254" height="1254" alt="" />
+            <div class="substrate-banner-type">
+              <span class="substrate-banner-eyebrow">BY <img src="assets/brand/layer-zero-electric-wordmark.png" width="2172" height="724" alt="" /></span>
+              <span class="substrate-banner-name">SUBSTRATE</span>
+              <span class="substrate-banner-descriptor">MODEL <b>→</b> LAYER <b>→</b> MATTER</span>
+            </div>
+          </div>
+          <div class="substrate-banner-bottom" aria-hidden="true"><span>SOFTWARE IN DEVELOPMENT</span><span>BUILT FROM THE PRODUCTION FLOOR OUTWARD</span></div>
+        </div>
       </div>
       <div class="substrate-intro">
         <div class="substrate-copy reveal">

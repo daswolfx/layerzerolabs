@@ -34,6 +34,15 @@ by the earlier site's parallax. The cubes respond to fine-pointer movement
 only; touch and reduced-motion users get the static composition. This is a
 visual preview, not evidence of Formspree delivery.
 
+The SUBSTRATE banner now uses the exact selected Ø and current electric
+wordmark as separate, unaltered assets. A layered field-line composition and
+restrained CSS motion replace the old cube-seal/circuit-board video. Reduced
+motion gets a static composition. The old MP4 and poster are retained in the
+worktree for provenance but are no longer loaded by the page. The companion
+[brand kit](../Brand/Layer%20Zero%20+%20SUBSTRATE%20Brand%20Kit/README.md)
+contains source assets, guidance, and a review specimen; neither the product
+lettering nor the kit is a release approval.
+
 ## Release gates
 
 - Review desktop and phone layouts with the owner.
@@ -47,3 +56,15 @@ visual preview, not evidence of Formspree delivery.
   software in development, not proof of release readiness.
 - Registrar transfer away from Squarespace is a separate DNS/account task;
   do not bundle it into a visual deployment.
+
+## 2026-10-20 release check
+
+- Desktop preview inspected with the selected Ø and SUBSTRATE banner. Phone
+  layout still needs owner review.
+- Local synthetic form submission reached the thank-you page; simulated server
+  failure displayed an error and restored the submit button.
+- A synthetic POST to the configured Formspree endpoint returned HTTP 200 and
+  `{"ok":true}`. Inbox receipt was not verified; the connected mail search was
+  rate-limited. Do not treat the HTTP response as proof of notification delivery.
+- The linked Shopify storefront loaded with public products and prices. This
+  verifies the destination, not cart/checkout or account-level integration.
