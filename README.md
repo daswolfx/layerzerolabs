@@ -1,8 +1,8 @@
 # Layer Zero Labs website
 
-Static GitHub Pages source. This Vault worktree is a review branch based on
-`origin/main` at `574efee`, not the published website. Do not merge or deploy
-without an approved preview.
+Static GitHub Pages source. The tactile redesign was published to
+`layerzerolabs.net` from PR #14 on 2026-10-20 (merge `96b9cf7`). Check the
+current branch and remote before making further changes.
 
 ## Local preview
 
@@ -34,28 +34,33 @@ by the earlier site's parallax. The cubes respond to fine-pointer movement
 only; touch and reduced-motion users get the static composition. This is a
 visual preview, not evidence of Formspree delivery.
 
-The SUBSTRATE banner now uses the exact selected Ø and current electric
+The SUBSTRATE banner uses the exact selected Ø and current electric
 wordmark as separate, unaltered assets. A layered field-line composition and
 restrained CSS motion replace the old cube-seal/circuit-board video. Reduced
 motion gets a static composition. The old MP4 and poster are retained in the
 worktree for provenance but are no longer loaded by the page. The companion
 [brand kit](../Brand/Layer%20Zero%20+%20SUBSTRATE%20Brand%20Kit/README.md)
-contains source assets, guidance, and a review specimen; neither the product
-lettering nor the kit is a release approval.
+contains source assets, guidance, and a review specimen. The owner's site
+approval is recorded in PR #14; that approval does not certify the separate
+brand-kit exports or SUBSTRATE product release.
 
-## Release gates
+## Publication gate
 
-- Review desktop and phone layouts with the owner.
-- Send an owner-controlled live Formspree test and verify receipt in the
-  intended inbox; test failure and retry behavior. Local mock success is not
-  delivery evidence.
-- Verify the Shopify product, cart, and checkout journey before calling the
-  shop integration complete. Do not count shop clicks as sales.
-- Review all claims and replace concept art with approved real work when
-  available. SUBSTRATE screenshots and feature language are previews of
-  software in development, not proof of release readiness.
-- Registrar transfer away from Squarespace is a separate DNS/account task;
-  do not bundle it into a visual deployment.
+- Show the owner a preview before the first publication of materially changed
+  visuals or claims. An explicit approval of that preview carries across turns;
+  do not ask again for the same release candidate. Reconfirm only when the
+  published candidate materially diverges from what was approved.
+- After approval, run proportionate checks and publish promptly in the same
+  work session. Surface any genuine blocker immediately. Do not silently
+  convert follow-up verification into a new approval gate or leave a prepared
+  release unpublished for hours.
+- Record remaining uncertainty separately. Formspree HTTP success is not inbox
+  delivery proof; Shopify storefront links are not checkout or account-level
+  integration; concept artwork is not a documented project. Follow these up
+  without claiming they are complete.
+- Registrar/DNS transfer, active Shopify theme or checkout changes, and a
+  SUBSTRATE software release are separate changes requiring their own scope
+  and approval. A website visual approval does not authorize them.
 
 ## 2026-10-20 release check
 
@@ -68,3 +73,7 @@ lettering nor the kit is a release approval.
   rate-limited. Do not treat the HTTP response as proof of notification delivery.
 - The linked Shopify storefront loaded with public products and prices. This
   verifies the destination, not cart/checkout or account-level integration.
+- The owner confirmed the preview had already been approved and requested
+  publication. PR #14 was merged and the public domain served the updated
+  SUBSTRATE markup and brand assets; inbox receipt and end-to-end Shopify
+  checkout remain follow-ups, not completed claims.
