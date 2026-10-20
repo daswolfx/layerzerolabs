@@ -59,7 +59,7 @@
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 36px;
+  gap: 22px;
 }
 
 .nav-toggle {
@@ -264,6 +264,17 @@
   flex-wrap: wrap;
   opacity: 0;
   animation: fadeUp 0.8s 1.05s forwards;
+}
+
+.hero-support {
+  max-width: 600px;
+  margin: 19px auto 0;
+  color: var(--text-secondary);
+  font-size: 0.77rem;
+  line-height: 1.6;
+  letter-spacing: 0.05em;
+  opacity: 0;
+  animation: fadeUp 0.8s 1.2s forwards;
 }
 
 /* Scroll indicator */

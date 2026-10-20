@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Project Request Submitted — Layer Zero Labs</title>
+  <meta name="description" content="The Layer Zero Labs project request confirmation page." />
+  <link rel="icon" type="image/png" href="assets/brand/layer-zero-electric-star-mark.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root { color-scheme: dark; --ink:#f3f7fa; --muted:#b9cbd4; --cyan:#4fe0ff; --amber:#ffb844; }
+    * { box-sizing:border-box; }
+    body { margin:0; min-height:100vh; background:linear-gradient(125deg,#0d2a38,#06141d 70%); color:var(--ink); font:16px/1.65 Barlow,Arial,sans-serif; }
+    header { padding:22px clamp(24px,5vw,70px); border-bottom:1px solid #1e4048; }
+    header a { display:inline-flex; align-items:center; gap:12px; color:var(--ink); text-decoration:none; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    header img { display:block; width:48px; height:48px; object-fit:contain; }
+    main { max-width:790px; margin:clamp(50px,9vw,115px) auto; padding:0 24px; }
+    .card { border:1px solid #2b6670; background:#0c2028e8; padding:clamp(26px,6vw,58px); box-shadow:0 24px 70px #0006; }
+    .eyebrow { color:var(--cyan); text-transform:uppercase; letter-spacing:.22em; font-size:12px; font-weight:700; }
+    h1 { font:700 clamp(38px,6vw,62px)/1 'Barlow Condensed',Arial,sans-serif; letter-spacing:.01em; margin:18px 0; }
+    p { color:var(--muted); margin:0 0 15px; }
+    a { color:var(--cyan); }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:30px; }
+    .actions a { padding:13px 19px; border:1px solid var(--cyan); color:var(--ink); text-decoration:none; text-transform:uppercase; letter-spacing:.1em; font-size:12px; font-weight:700; }
+    .actions a:first-child { background:var(--amber); border-color:var(--amber); color:#09141a; }
+    .actions a:focus-visible { outline:2px solid white; outline-offset:4px; }
+    .preview-note { border-left:3px solid var(--amber); padding:10px 14px; background:#32251b; color:#ffe9c3; margin-top:24px; }
+  </style>
+</head>
+<body data-page="thank-you">
+  <header><a href="index.html" aria-label="Layer Zero Labs home"><img src="assets/brand/layer-zero-electric-star-mark.png" alt="" />Layer Zero Labs</a></header>
+  <main><div class="card">
+    <div class="eyebrow">Project request</div>
+    <h1>Request submitted</h1>
+    <p id="confirmation-copy">Thanks for sharing your project. We will review the details and reply by email with questions, recommendations, or the next step.</p>
+    <p id="followup-copy">Need to add context or send a file separately? Email <a href="mailto:print@layerzerolabs.net">print@layerzerolabs.net</a> and include the name used on your request.</p>
+    <div class="actions"><a href="https://layerzerolabs.myshopify.com/" data-track-shop>Shop ready-made items</a><a id="home-action" href="index.html">Back to the website</a></div>
+    <p class="preview-note" id="preview-note" hidden>Preview mode: this test request was discarded locally. No email or customer lead was sent.</p>
+  </div></main>
+  <script>
+    let confirmed = false;
+    try {
+      confirmed = sessionStorage.getItem('lzl-quote-confirmed') === '1';
+      sessionStorage.removeItem('lzl-quote-confirmed');
+    } catch { /* browser storage is optional */ }
+    document.body.dataset.confirmed = String(confirmed);
+    if (!confirmed) {
+      document.querySelector('h1').textContent = 'Start a project request';
+      document.getElementById('confirmation-copy').textContent = 'This page appears after a project request is sent. To tell us about your project, use the request form on the website.';
+      document.getElementById('followup-copy').hidden = true;
+      document.getElementById('home-action').textContent = 'Open the request form';
+      document.getElementById('home-action').href = 'index.html#project-request';
+    }
+    if (confirmed && location.origin === 'http://127.0.0.1:43219') document.getElementById('preview-note').hidden = false;
+  </script>
+  <script src="js/analytics.js?v=20261014a" data-ga4-id=""></script>
+</body>
+</html>
